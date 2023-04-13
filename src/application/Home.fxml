@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <top>
+      <AnchorPane prefHeight="162.0" prefWidth="600.0" style="-fx-background-color: #DBE2E3;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="98.0" layoutY="71.0" text="Clinic Management System" textFill="#312175">
+               <font>
+                  <Font name="Bodoni MT" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="211.0" prefWidth="600.0" style="-fx-background-color: #5AD0DE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="staffButton" layoutX="454.0" layoutY="71.0" mnemonicParsing="false" onAction="#staffLoginPage" style="-fx-background-color: #A3A6A6;" text="Clinic Staff" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="patientButton" layoutX="454.0" layoutY="134.0" mnemonicParsing="false" onAction="#patientLoginPage" prefHeight="31.0" prefWidth="98.0" style="-fx-background-color: #A3A6A6;" text="Patient" textAlignment="CENTER" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="237.0" fitWidth="426.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@clinic_home2.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="457.0" layoutY="29.0" text="Click to login" textFill="#211565">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #BCC7D4;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StaffController">
+   <children>
+      <AnchorPane prefHeight="108.0" prefWidth="600.0" style="-fx-background-color: #075eea;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="604.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../i200458_i201822_F_ProjectCode/src/application/bgImage.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="87.0" layoutY="35.0" text="Timetable Management Portal" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="addTimeSlot" layoutX="475.0" layoutY="358.0" mnemonicParsing="false" onAction="#AddTimeSLot" style="-fx-background-color: #850500;" text="Add TimeSlot" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="returnToPortal" layoutX="6.0" layoutY="358.0" mnemonicParsing="false" onAction="#toStaffPage" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #850500;" text="Return to Portal" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="115.0" text="Select the timeslot you want to remove ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="115.0" text="TimeSlot ID:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="251.0" text="TimeSlot Date:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TimeSlotIDText" layoutX="435.0" layoutY="135.0" />
+      <TextField fx:id="TimeSLotStartTimeText" layoutX="435.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="TimeSlotEndTimeText" layoutX="435.0" layoutY="226.0" />
+      <Label layoutX="434.0" layoutY="160.0" text="TimeSlot start time:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="205.0" text="TimeSlot end time:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TimeSLotDateText" layoutX="435.0" layoutY="271.0" />
+      <TextField fx:id="TimeSLotDayText" layoutX="435.0" layoutY="315.0" />
+      <Label layoutX="435.0" layoutY="296.0" text="TimeSlot Day:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeTimeslot" layoutX="237.0" layoutY="358.0" mnemonicParsing="false" onAction="#RemoveTimeSLot" style="-fx-background-color: #850500;" text="Remove TimeSlot" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="timetableTextarea" layoutX="26.0" layoutY="139.0" prefHeight="200.0" prefWidth="386.0" text="TimeSlot ID: 1, TIme slot start time: 9:00pm, timeslot end time: 9:30pm, time slot date: 9th March 2023, Time slot day: Wednesday" wrapText="true" />
+   </children>
+</AnchorPane>

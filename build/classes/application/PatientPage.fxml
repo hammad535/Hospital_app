@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PatientController">
+   <top>
+      <AnchorPane prefHeight="161.0" prefWidth="600.0" style="-fx-background-color: #0b87c7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="163.0" fitWidth="606.0" layoutX="-3.0">
+               <image>
+                  <Image url="@backgroundIMG.jpeg" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="23.0" text="Clinic Management System" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="82.0" text="Patient Portal" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold Italic" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="248.0" prefWidth="600.0" style="-fx-background-color: #D1C3C7;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="viewTimeslotButton" layoutX="332.0" layoutY="21.0" mnemonicParsing="false" onAction="#viewTimeslotPage" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #850500;" text="View TimeSlot" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="trackRecordButton" layoutX="333.0" layoutY="135.0" mnemonicParsing="false" onAction="#patientTrackRecordPage" prefHeight="31.0" prefWidth="182.0" style="-fx-background-color: #850500;" text="Track Record" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="newAppointmentButton" layoutX="332.0" layoutY="58.0" mnemonicParsing="false" onAction="#makeAppointmentsPage" prefHeight="31.0" prefWidth="185.0" style="-fx-background-color: #850500;" text="Make Appointments" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelAppointmentButton" layoutX="332.0" layoutY="97.0" mnemonicParsing="false" onAction="#cancelAppointmentPage" prefHeight="31.0" prefWidth="183.0" style="-fx-background-color: #850500;" text="Cancel Appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" blendMode="SRC_ATOP" layoutX="388.0" layoutY="182.0" mnemonicParsing="false" onAction="#goBacktoHome" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #850500;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="235.0" fitWidth="273.0" layoutY="1.0">
+               <image>
+                  <Image url="@clinic_Home.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
